@@ -19,6 +19,8 @@ modeler.importXML(pizzaDiagram, function(err) {
 
   modeler.get('canvas').zoom('fit-viewport');
 
+  console.log(customElements);
+  console.log(modeler)
   modeler.addCustomElements(customElements);
 });
 
