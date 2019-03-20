@@ -11,7 +11,7 @@ var modeler = new CustomModeler({
   }
 });
 
-modeler.importXML(pizzaDiagram, function(err) {
+modeler.importXML(function(err) {
 
   if (err) {
     console.error('something went wrong:', err);
@@ -20,7 +20,7 @@ modeler.importXML(pizzaDiagram, function(err) {
   modeler.get('canvas').zoom('fit-viewport');
 
   console.log(customElements);
-  console.log(modeler)
+  console.log(modeler);
   modeler.addCustomElements(customElements);
 });
 
